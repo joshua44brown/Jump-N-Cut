@@ -1,0 +1,370 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html body * {
+  font-family: 'Cabin Condensed', sans-serif;
+}
+
+body {
+  max-width: 2000px;
+  max-height: 3000px;
+}
+
+/* html, body {min-height: 100%;}
+body {background-size: cover;} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+a:hover {
+  color: rgba(156, 89, 67, 1);
+  transition: all 500ms ease;
+}
+header {
+  width: 100%;
+  height: 380px;
+  background-color: rgba(82, 76, 75, 1);
+}
+.tophead {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.tophead ul {
+  margin-top: 5px;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+}
+li {
+  margin: 0;
+  list-style: none;
+  display: inline;
+  font-size: 12px;
+  padding-right: 10px;
+
+}
+li a {
+  text-decoration: none;
+  color: antiquewhite;
+  padding-top: 20px;
+}
+.logo img {
+  height: 75px;
+  width: 175px;
+  text-align: center;
+  margin-top: 2px;
+  padding-right: 15px;
+  position: relative;
+  top: -15px;
+}
+.join {
+  text-align: right;
+  justify-content: end;
+  padding-top: 5px;
+}
+button {
+  color: rgba(102,118,138,255);
+  border: 1px solid;
+  background-color: rgba(8, 20, 31, 1);
+  color: antiquewhite;
+  margin-top: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  text-shadow: 1px 1px 1px #000;
+}
+button:hover {
+  background-color: rgba(156, 89, 67, 1);
+  transition: all 500ms ease;
+}
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(204, 204, 204, 0.6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.brownFirst a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+header .brownFirst {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.brownFirst h1 {
+  font-size: 45px;
+  font-weight: 500;
+  color: antiquewhite;
+  padding-top: 10px;
+  margin-top: 0;
+}
+.brownFirst p {
+  color: antiquewhite;
+  text-align: center;
+  padding: 0 50px 20px 50px;
+}
+
+
+/******************************************
+/* Main
+/*******************************************/
+
+html main .ballOne {
+  width: 100%;
+  height: 350px;
+  padding-top: 40px;
+  background-image: url(../../JNC/jncimages/court1.jpg);
+  background-size: 100%;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  color: antiquewhite;
+}
+
+.ballOne h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.ballOne p {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 90px 0 90px;
+}
+
+.why1,
+.why2 {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ballOne .why1 {
+  width: 45%;
+  margin: 0 0 200px 0;
+  padding: 0 0 0 50px;
+} 
+.ballOne .why2 {
+  width: 45%;
+  margin: 0 0 0 100px;
+  padding: 0 0 0 100px;
+}
+main .hooper {
+  background-color: rgba(82, 76, 75, 1);
+  height: 450px;
+  display: flex;
+  justify-content: space-evenly center;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.hooper .boxleft,
+.hooper .boxright {
+  justify-content: center;
+  padding: 30px 30px 0 30px;
+  width: 50%;
+}
+.hooper .boxleft img,
+.hooper .boxright img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10%;
+  
+}
+.hooper a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 30px 10px 30px;
+  color: antiquewhite;
+  font-size: 12px;
+}
+
+main .white2 {
+  width: 100%;
+  height: 330px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: antiquewhite;
+  color: rgba(156, 89, 67, 1);
+}
+.white2 p {
+  padding: 0 70px 20px 70px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.white2 a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 30px 10px 30px;
+  color: antiquewhite;
+  font-size: 12px;
+}
+.volunteer button{
+ border: 2px solid rgba(156, 89, 67, 1); 
+}
+/******************************************
+/* Footer
+/*******************************************/
+footer {
+  background-color: rgba(8, 20, 31, 1);
+  height: 175px;
+}
+.leftfoot ul {
+  color: antiquewhite;
+  padding: 10px 0 0 10px;
+}
+footer h6 {
+  color: rgba(156, 89, 67, 1);
+  margin: 10px 0 0 0;
+}
+footer .rightfoot {
+  float: right;
+  width: 50%;
+  text-align: right;
+  padding: 10px 10px 0 20%;
+}
+.leftfoot {
+  float: left;
+  width: 50%;
+}
+
+.buttons :hover{
+  color: rgba(156, 89, 67, 1);
+  transition: all 500ms ease;
+}
+
+/******************************************
+/* Responsiveness1
+/*******************************************/
+
+
+@media (min-width:635px) and (max-width: 1100px) {
+  .brownFirst {
+    margin: 0;
+    padding: 0;
+  }
+  .brownFirst h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .ballOne {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center right;
+    padding: 0;
+  }
+  .ballOne .secondP {
+    font-size: 20px;
+  }
+  .ballOne .why1,
+  .ballOne .why2 {
+    margin: 0;
+    padding: 0 0 0 0;
+    text-align: center;
+  }
+  .why1,
+  .firstP {
+    display: none;
+  }
+  .boxleft h4,
+  .boxright h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .boxleft .sessions button,
+  .boxright .hireUs button {
+    font-size: 20px;
+  }
+  .boxleft p,
+  .boxright p {
+    display: none;
+  }
+}
+/******************************************
+/* Responsiveness2
+/*******************************************/
+
+@media screen and (max-width:634px) {
+  .join {
+    text-align: right;
+    justify-content: end;
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  li {
+    margin: 0;
+    list-style: none;
+    display: inline;
+    font-size: 10px;
+    padding-right: 5px;
+  }
+  .logo img{
+    height: 60px;
+    width: 110px;
+  }
+  .brownFirst h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .brownFirst p {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 30px 10px 30px;
+    margin-top: 0;
+  }
+  .ballOne {
+    display:none
+  }
+  main .hooper {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(156, 89, 67, 1);
+    color: antiquewhite;
+    align-items: center;
+  }
+  main .hooper .boxleft,
+  main .hooper .boxright {
+    font-size: 12px;
+    text-align: center;
+  }
+  main .hooper .boxright {
+    border-top: 2px solid antiquewhite;
+    padding-top: 20px;
+  }
+  main .hooper .boxleft p,
+  main .hooper .boxright p {
+    display: none;
+  }
+  main .white2 {
+    font-size: 15px;
+    padding-top: 30px;
+  }
+  main .white2 p {
+    font-size: 12px
+  }
+}
